@@ -31,7 +31,6 @@ button {
 .header-section img {
   width: 48px;
   height: 48px;
-
 }
 
 .name-section h1,
@@ -39,12 +38,16 @@ button {
   display: none;
 }
 
+.header-section nav {
+  display: flex;
+  margin: auto;
+}
+
 .header-section ul {
   display: flex;
   width: 365px;
   justify-content: space-around;
   align-items: center;
-  margin: auto;
 }
 
 .header-options {
@@ -341,7 +344,7 @@ h2 {
   margin-bottom: 48px;
 }
 
-.differences-section section {
+.differences-grid {
   display: flex;
   gap: 48px;
   justify-content: space-around;
@@ -382,11 +385,18 @@ h2 {
 
 .footer-section p {
   font-size: 16px;
+}
 
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 60px;
+  background: transparent;
+  z-index: 1000;
 }
 
 @media screen and (max-width:768px) {
-
 
   .header-section {
     position: fixed;
@@ -575,7 +585,7 @@ h2 {
     width: 100vw;
   }
 
-  .differences-section section {
+  .differences-grid {
     flex-direction: column;
   }
 
