@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
     <title>Studio Ranya Fernandes</title>
   </head>
   <body>
@@ -28,8 +36,12 @@
           <li class="header-options">Contatos</li>
         </ul>
       </nav>
-      <button>Reservar Horário</button>
-      <img class="button-calendar" src="./Assets/calendar.png" />
+      <button onclick="openCalendar()">Reservar Horário</button>
+      <img
+        class="button-calendar"
+        src="./Assets/calendar.png"
+        onclick="openCalendar()"
+      />
     </header>
 
     <main>
@@ -40,7 +52,7 @@
             Descubra a arte do embelezamento do olhar. Elevando sua autoestima
             com precisão, graça e um toque artesanal exclusivo.
           </p>
-          <button>Agendar seu Horário</button>
+          <button onclick="openCalendar()">Agendar seu Horário</button>
         </div>
         <div>
           <img src="./Assets/Hero-Image.png" alt="Extensão de cílios" />
@@ -149,7 +161,7 @@
               promovendo retenção extraordinária e saúde prolongada aos cílios.
             </p>
             <div>
-              <button>AGENDAR</button>
+              <button onclick="openCalendar()">AGENDAR</button>
             </div>
           </div>
         </div>

@@ -13,3 +13,10 @@ function showMenu() {
 
 menu.addEventListener("click", showMenu)
 
+
+function openCalendar() {
+  Calendly.initPopupWidget({
+    url: 'https://calendly.com/bruno-rivaroli26'
+  });
+  return false;
+}
