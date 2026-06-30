@@ -28,7 +28,7 @@ button {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.08);
 }
 
-.header-section img {
+.logo {
   width: 48px;
   height: 48px;
 }
@@ -60,6 +60,10 @@ button {
   background-color: #5E5E5E;
   color: #FFFFFF;
   border: none;
+}
+
+.button-calendar {
+  display: none;
 }
 
 .hero-section {
@@ -398,28 +402,34 @@ h2 {
 
 @media screen and (max-width:768px) {
 
+  .button-menu {
+    display: flex;
+    width: 24px;
+    height: 18px;
+  }
+
+  .button-calendar {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
   .header-section {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
     padding: 16px 20px;
     align-items: center;
-    margin-bottom: 15px;
-  }
-
-  .header-section img {
-    display: flex;
-    height: 24px;
-    width: 24px;
+    justify-content: center;
   }
 
   .name-section {
-    margin: auto auto;
+    width: 100%;
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
   }
 
   .name-section h1 {
